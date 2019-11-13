@@ -1,4 +1,4 @@
-// recupero gli input dall 'utente
+// recupero gli input dall'utente
 var nome = prompt("Ciao, inserisci il tuo nome:", "Mario");
 var cognome = prompt("grazie " + nome + ", ora inserisci il tuo cognome:", "Rossi");
 var colore = prompt("e infine inserisci il tuo colore preferito:", "giallo");
