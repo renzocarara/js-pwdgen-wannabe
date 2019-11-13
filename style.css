@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 400px;
     height: 180px;
     margin: 100px auto;
@@ -30,19 +31,30 @@ body {
 p {
     font-size: 16px;
     font-weight: bold;
-    margin: 10px;
 }
 
-#pass_container {
-    background: white;
-    margin: 10px;
+#pwd_container {
+    position: relative;
+    background: #ded9d9;
     color: black;
+    border-radius: 10px;
     text-transform: lowercase;
     text-shadow: none;
     font-size: 20px;
     padding: 10px;
-    border: 3px solid dimgray;
+    border: 3px solid lightgray;
     font-family: 'Alfa Slab One', cursive;
+    animation: rotating-psw 2s 0.5s ease-in-out forwards;
+    visibility: hidden;
 }
 
-h1 {}
+@keyframes rotating-psw {
+    0% {
+        visibility: visible;
+        transform: rotateZ(2000deg);
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
